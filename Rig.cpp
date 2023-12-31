@@ -4,17 +4,17 @@ typedef long long ll;
 #include <time.h>
 
 int main(){
-    string s;
+    string sr;
     srand(time(0));
     ofstream f("instructions.txt");
     for(int i=0;i<100000;i++){
-        s.clear();
+        sr.clear();
         for(int j=0;j<50;j++){
-            ll k=rand()%2;
-            if(k)s.push_back('1');
+            ll kt=rand()%2;
+            if(kt)sr.push_back('1');
             else
-            s.push_back('0');
+            sr.push_back('0');
         }
-        f<<s<<"\n";
+        f<<sr<<"\n";
     }
 }
